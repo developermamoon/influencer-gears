@@ -22,3 +22,44 @@ header nav {
     font-size: 16px;
     font-weight: 600;
 }
+
+.upper-part{
+    margin: 20px 120px;
+    display: flex;
+    align-items: center;
+}
+.upper-part h1{
+    font-weight: 700;
+    color: #3A3A3A;
+    font-size: 52px;
+    margin-bottom: 16px;
+}
+.upper-part .left p{
+    color: #3A3A3A;
+    font-size: 16px;
+}
+.button-design{
+    font-size: 16px;
+    border-radius: 41px;
+    background-color: #E02C6D;
+    border: 0;
+    padding: 10px 24px;
+    font-weight: 700;
+    color: white;
+}
+.fa-arrow-right-long{
+    margin-left: 12px;
+}
+.upper-part .right img{
+    width: 100%;
+}
+
+.logo-part{
+    display: flex;
+    margin: 100px 165px;
+    justify-content: space-evenly;
+    align-items: center;
+    border-top: 1px solid rgba(110, 110, 110, 0.329);
+    border-bottom: 1px solid rgba(110, 110, 110, 0.329);
+    padding: 10px;
+}
