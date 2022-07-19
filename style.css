@@ -52,14 +52,22 @@ header nav {
 }
 .upper-part .right img{
     width: 100%;
+    margin-left: 133px;
 }
+.upper-part .right .overlap{
+        position: absolute;
+        left: 880px;
+        top: 160px;
+        width: 30%;
+        z-index: 1;
+    }
 
 .logo-part{
     display: flex;
     margin: 100px 165px;
     justify-content: space-evenly;
     align-items: center;
-    border-top: 1px solid rgba(110, 110, 110, 0.329);
-    border-bottom: 1px solid rgba(110, 110, 110, 0.329);
+    border-top: 1px solid rgba(110, 110, 110, 0.200);
+    border-bottom: 1px solid rgba(110, 110, 110, 0.200);
     padding: 10px;
 }
