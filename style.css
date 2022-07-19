@@ -149,3 +149,73 @@ header nav {
     color: rgba(224, 44, 109, 0.87);
     margin-top: 50px;
 }
+
+.lower-part{
+    display: flex;
+    margin: 100px 165px;
+    /* justify-content: space-between; */
+    align-items: center;
+}
+.lower-part .left{
+   
+}
+.lower-part .left img{
+    /* width: 100%;
+    height: auto; */
+}
+.lower-part .right{
+    width: 100%;
+    margin-left: 96px;
+}
+.lower-part .right h1{
+    font-size: 30px;
+    font-weight: 700;
+    font-family: 'Poppins', sans-serif;
+    margin: 10px 0;
+}
+.lower-part .right p{
+    font-size: 16px;
+}
+.join-button-design {
+    font-size: 16px;
+    /* border-radius: 41px; */
+    background-color: #E02C6D;
+    border: 0;
+    padding: 10px 24px;
+    font-weight: 700;
+    color: white;
+}
+.footer{
+    background-color: #0A0826;
+    padding: 50px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.footer h3{
+    color: white;
+    font-size: 24px;
+}
+.footer p{
+    color: #D9DBE1;
+    font-size: 14px;
+}
+.footer .social-media-contact{
+    color: white;
+    display: flex;
+}
+.footer .social-media-contact .round{
+    height: 32px;
+    width: 32px;
+    border-radius: 50%;
+    background-color: grey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0  10px;
+}
+.footer .social-media-contact .round i{
+    color: white;
+    font-size: 18px;
+}
