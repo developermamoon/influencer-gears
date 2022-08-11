@@ -56,6 +56,11 @@ header .right a{
     padding: 10px 15px;
     font-weight: 700;
     color: white;
+    display: inline-block;
+    text-decoration: none;
+}
+.button-design:hover{
+    background-color: #c2064b;
 }
 .fa-arrow-right-long{
     margin-left: 12px;
@@ -160,6 +165,10 @@ header .right a{
     color: rgba(224, 44, 109, 0.87);
     margin-top: 50px;
 }
+.see-more-design:hover{
+    color: #c2064b;
+    cursor: pointer;
+}
 
 /*---------------------------------------------------------------------- featured section  -------------------------------------------------*/
 .lower-part{
@@ -190,12 +199,18 @@ header .right a{
 }
 .join-button-design {
     font-size: 16px;
-    /* border-radius: 41px; */
+    border-radius: 41px;
     background-color: #E02C6D;
     border: 0;
     padding: 10px 24px;
     font-weight: 700;
     color: white;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 10px;
+}
+.join-button-design:hover {
+    background-color: #c2064b;
 }
 
 /*------------------------------------------------- footer part  -------------------------------------------------*/
