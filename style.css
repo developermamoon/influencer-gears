@@ -1,9 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter&family=Poppins:wght@500;600;700&family=Roboto:wght@700&display=swap');
 
 
-/* fonts  */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 body{
     font-family: 'Poppins', sans-serif;
+}
+/*---------------------------------------------------- header  ----------------------------------------------------*/
+header{
+    padding: 20px 0;
 }
 header h2{
     font-size: 24px;
@@ -16,14 +24,14 @@ header nav {
     align-items: center;
     justify-content: space-between;
 }
-.right a{
+header .right a{
     margin-left: 34px;
     text-decoration: none;
     color: #3A3A3A;
     font-size: 16px;
     font-weight: 600;
 }
-
+/*---------------------------------------------------- banner section  ----------------------------------------------------*/
 .upper-part{
     margin: 20px 120px;
     display: flex;
@@ -40,11 +48,12 @@ header nav {
     font-size: 16px;
 }
 .button-design{
+    margin: 20px 0;
     font-size: 16px;
     border-radius: 41px;
     background-color: #E02C6D;
     border: 0;
-    padding: 10px 24px;
+    padding: 10px 15px;
     font-weight: 700;
     color: white;
 }
@@ -62,6 +71,8 @@ header nav {
     background-size: 315px 310px;
 }
 
+/*--------------------------------------- company logo section  ----------------------------------------------------*/
+
 .logo-part{
     display: flex;
     margin: 100px 165px;
@@ -71,37 +82,36 @@ header nav {
     border-bottom: 1px solid rgba(110, 110, 110, 0.200);
     padding: 10px;
 }
+
+/*------------------------------------- popular collection section--------------------------------------------*/
 .center{
     display: flex;
-    /* align-items: flex-end; */
     flex-direction: column;
-    /* justify-content: flex-end; */
-    align-items: center;
-    
+    align-items: center;  
 }
-.collections{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 25px;
-    justify-items: center;
-    /* width: 1047px; */
-    height: auto;
+.popular-collection h3{
+    font-size: 28px;
+    margin: 20px 0;
+    /* text-align: center; */
 }
 .collection-body{
     display: flex;
     flex-direction: column;
     align-items: flex-end;
 }
-.popular-collection h3{
-    font-size: 28px;
-    text-align: center;
+.collections{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    justify-items: center;
+    height: auto;
 }
 
 .collection{
     
     background-color: white;
     border-radius: 5px;
-    width: 280px;
+    /* width: 280px; */
     box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
     padding: 16px 10px 10px 10px;
     
@@ -126,7 +136,8 @@ header nav {
     font-family: 'Inter', sans-serif;
     font-weight: 400;
     margin-bottom: 6px;
-}.ratings{
+}
+.ratings{
     font-size: 14px;
     color: #5E6366;
     font-family: 'Roboto', sans-serif;
@@ -150,22 +161,23 @@ header nav {
     margin-top: 50px;
 }
 
+/*---------------------------------------------------------------------- featured section  -------------------------------------------------*/
 .lower-part{
     display: flex;
-    margin: 100px 165px;
-    /* justify-content: space-between; */
-    align-items: center;
+    margin: 80px 180px;
+
 }
 .lower-part .left{
-   
+   width: 50%;
+   text-align: center;
 }
 .lower-part .left img{
-    /* width: 100%;
-    height: auto; */
+    /* width: 70%; */
+    height: auto;
 }
 .lower-part .right{
-    width: 100%;
-    margin-left: 96px;
+    width: 50%;
+    /* margin-left: 96px; */
 }
 .lower-part .right h1{
     font-size: 30px;
@@ -185,6 +197,8 @@ header nav {
     font-weight: 700;
     color: white;
 }
+
+/*------------------------------------------------- footer part  -------------------------------------------------*/
 .footer{
     background-color: #0A0826;
     padding: 50px;
@@ -204,10 +218,14 @@ header nav {
 .footer .social-media-contact{
     color: white;
     display: flex;
+    margin-top: 15px;
+}
+.footer .social-media-contact a {
+    text-decoration: none;
 }
 .footer .social-media-contact .round{
-    height: 32px;
-    width: 32px;
+    height: 40px;
+    width: 40px;
     border-radius: 50%;
     background-color: grey;
     display: flex;
@@ -215,7 +233,164 @@ header nav {
     align-items: center;
     margin: 0  10px;
 }
+.footer .social-media-contact .round:hover{
+background-color: rgb(1, 100, 214);
+}
 .footer .social-media-contact .round i{
     color: white;
-    font-size: 18px;
+    font-size: 20px;
+}
+
+/*----------------------------------- tab view  -----------------------------------------*/
+@media only screen and (min-width: 577px) and (max-width: 990px){
+
+    /*------------- header  --------------*/
+    header {
+        padding: 10px 10px;
+    }
+    header nav{
+        margin: 0px ;
+        padding: 0 8px;
+    }
+    header .left{
+        width: 40%;
+    }
+    header .right {
+        width: 60%;
+        text-align: end;
+    }
+    header .right a {
+        font-size: 13px;
+        margin-left: 15px;
+    }
+/*------------------ banner  ---------------*/
+    .upper-part{
+        margin: 20px 35px;
+    }
+    .upper-part .left{
+        width: 60%;
+        padding: 15px;
+    }
+    .upper-part .right{
+        width: 40%;
+        margin-left: 0px;
+    }
+    .upper-part .right img{
+        width: 100%;
+    }
+
+    /*------------- logo section  ---------*/
+    .logo-part{
+        display: none;
+    }
+
+    /*--------- popular collection section  -----*/
+    .collections{
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    /*----------- feature section  ------------*/
+    .lower-part{
+        flex-direction: column;
+        margin: 50px 0;
+    }
+    .lower-part .left{
+        width: 100%;
+    }
+    .lower-part .right{
+        width: 100%;
+        text-align: center;
+        padding: 0 30px;
+    }
+    .join-button-design{
+        margin: 15px 0;
+    }
+}
+
+/*----------------------------------- mobile view  -----------------------------------------*/
+@media only screen and (max-width: 576px){
+   header nav{
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+   } 
+   header .left{
+    width: 100%;
+    text-align: center;
+   }
+   header h2{
+    font-size: 30px;
+    margin-bottom: 10px;
+   }
+   header .right{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    background-color:#3A3A3A;
+    padding: 0 2px;
+   }
+   header .right a {
+    margin: 0;
+    color: white;
+    font-size: 14px;
+   }
+
+   /*------- banner section  ----------*/
+   .upper-part{
+    flex-direction: column;
+    margin: 10px 20px;
+    /* justify-content: center; */
+   }
+   .upper-part .left{
+    width: 100%;
+    order: 2;
+    text-align: center;
+   }
+   .upper-part h1{
+    font-size: 40px;
+   }
+   .upper-part .right {
+    width: 100%;
+    /* text-align: center; */
+    margin-left: 0;
+    background-position: center;
+   }
+   .upper-part .right img{
+    width: 100%;
+   }
+
+   /*-------- logo part  ----*/
+   .logo-part{
+    display: none;
+   }
+
+   /*----------- popular-collection-------- */
+   .collections{
+    grid-template-columns: repeat(1,1fr);
+   }
+
+   .see-more-design{
+    margin-top: 30px;
+   }
+   .collection-body{
+    align-items: center;
+   }
+   /*---------- featured section  ----------*/
+   .lower-part{
+    margin: 20px 20px ;
+    flex-direction: column;
+   }
+   .lower-part .left{
+    width: 100%;
+   }
+   .lower-part .left img{
+    width: 85%;
+   }
+   .lower-part .right{
+    width: 100%;
+    text-align: center;
+   }
+   .join-button-design{
+    margin: 10px 0;
+   }
 }
