@@ -342,7 +342,7 @@ background-color: rgb(1, 100, 214);
     width: 100%;
     justify-content: space-evenly;
     background-color:#3A3A3A;
-    padding: 0 2px;
+    padding: 8px 0px;
    }
    header .right a {
     margin: 0;
